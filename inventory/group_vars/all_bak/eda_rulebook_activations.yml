@@ -1,5 +1,5 @@
 ---
-eda_rulebook_activations:
+eda_rulebook_activations_all:
   - name: gitea_hook
     description: Hook to listen for changes in gitea
     project: eda

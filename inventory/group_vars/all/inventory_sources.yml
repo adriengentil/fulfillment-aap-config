@@ -1,0 +1,23 @@
+---
+controller_inventory_sources_all:
+  - name: fulfillment-configuration
+    organization: configuration
+    source: scm
+    source_project: fulfillment-configuration
+    source_path: inventories/inventory_{{ env }}.yml
+    inventory: configuration
+    credential: ""
+    overwrite: true
+    overwrite_vars: true
+    update_cache_timeout: 0
+  - name: fulfillment-eda
+    organization: fulfillment
+    source: scm
+    source_project: fulfillment-eda
+    source_path: inventories/hosts.yml
+    inventory: fulfillment-eda
+    credential: ""
+    overwrite: true
+    overwrite_vars: true
+    update_cache_timeout: 0
+...

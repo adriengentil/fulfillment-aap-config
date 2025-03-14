@@ -1,0 +1,27 @@
+---
+controller_projects_all:
+  - name: fulfillment-configuration
+    description: Fulfillment AAP configuration
+    organization: configuration
+    scm_type: git
+    scm_url: https://github.com/adriengentil/fulfillment-aap-config.git
+    scm_branch: "main"
+    scm_clean: true
+    scm_update_on_launch: false
+    scm_credential: ""
+    update_project: true
+    wait: true
+  - name: fulfillment-eda
+    description: fulfillment EDA
+    organization: fulfillment
+    scm_type: git
+    scm_url: https://github.com/adriengentil/fulfillment-eda.git
+    scm_branch: "main"
+    scm_clean: true
+    scm_update_on_launch: false
+    scm_credential: ""
+    update_project: true
+    wait: true
+  - name: Demo Project
+    state: absent
+...

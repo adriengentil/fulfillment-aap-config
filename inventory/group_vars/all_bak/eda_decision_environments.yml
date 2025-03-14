@@ -1,5 +1,5 @@
 ---
-eda_decision_environments:
+eda_decision_environments_all:
   - name: minimal
     description: my default decision environment
     image_url: "{{ aap_hostname }}/de-minimal-rhel8"

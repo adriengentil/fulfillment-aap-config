@@ -71,8 +71,6 @@ aap_setup_inst_extra_vars:
 aap_setup_inst_force: true
 
 controller_hostname: "{{ aap_setup_prep_inv_nodes['automationcontroller'][0] }}"
-controller_username: "{{ controller_username | default('admin') }}"
-controller_password: "{{ ansible_password | default('Password1234!') }}"
 # controller_oauthtoken: ""
 # controller_config_file: ""
 controller_validate_certs: false
