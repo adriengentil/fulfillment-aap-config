@@ -1,0 +1,19 @@
+---
+eda_rulebook_activations_all:
+  - name: fulfilment-webhook
+    organization: fulfillment
+    project: fulfillment-webhook
+    state: absent
+  - name: fulfillment-webhook-001
+    description: Listen for events from the fulfillment service
+    organization: fulfillment
+    eda_credentials:
+      - controller-fulfillment-credentials
+    project: fulfillment-webhook
+    rulebook: "cluster_fulfillment.yml"
+    decision_environment: default
+    log_level: debug
+    enabled: true
+    k8s_service_name: fulfillment-webhook
+    state: present
+...

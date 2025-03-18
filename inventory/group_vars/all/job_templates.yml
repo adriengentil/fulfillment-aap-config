@@ -1,11 +1,11 @@
 controller_templates_all:
   - name: Demo Job Template
     state: absent
-  - name: create_hosted_cluster
+  - name: create-hosted-cluster
     project: fulfillment-eda
     job_type: run
     playbook: playbooks/openshift_hcp_manifest_playbook.yml
-    inventory: localhost
+    inventory: hosts-inventory
     execution_environment: "Default execution environment"
     concurrent_jobs_enabled: false
     ask_variables_on_launch: false

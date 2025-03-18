@@ -1,0 +1,10 @@
+---
+eda_projects_all:
+  - name: fulfillment-webhook
+    description: Fulfillment webhook
+    organization: fulfillment
+    url: https://github.com/adriengentil/fulfillment-eda.git
+    wait: true
+    interval: 10
+    sync: true
+...

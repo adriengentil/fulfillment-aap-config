@@ -1,0 +1,7 @@
+---
+eda_decision_environments_all:
+  - name: default
+    description: default decision environment
+    organization: fulfillment
+    image_url: "quay.io/ansible/ansible-rulebook"
+...

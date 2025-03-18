@@ -1,0 +1,12 @@
+---
+controller_inventories_all:
+  - name: "Demo Inventory"
+    organization: Default
+    state: absent
+  - name: "{{ env }}-inventory"
+    description: "{{ env }} inventory"
+    organization: configuration
+  - name: hosts-inventory
+    description: hosts inventory
+    organization: fulfillment
+...

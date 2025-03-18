@@ -2,8 +2,6 @@
 aap_organizations_all:
   - name: configuration
   - name: fulfillment
-  - name: fullfilment
-    state: absent
 #    galaxy_credentials:
 #      - ah_published
 #      - ah_certified

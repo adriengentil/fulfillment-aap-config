@@ -4,4 +4,9 @@ aap_user_accounts_all:
     is_superuser: false
     password: "{{ controller_api_user_pass }}"
     state: present
+  - username: controller-fulfillment-service-user
+    is_superuser: false
+    password: "qwerty1234"
+    organization: fulfillment
+    state: present
 ...

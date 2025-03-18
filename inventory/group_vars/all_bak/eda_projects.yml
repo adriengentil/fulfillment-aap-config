@@ -3,7 +3,6 @@ eda_projects_all:
   - name: eda
     description: config as code eda
     url: https://github.com/djdanielsson/eda.git
-    # credential: test_token
     wait: true
     interval: 10
     sync: true

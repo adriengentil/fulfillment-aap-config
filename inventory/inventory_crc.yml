@@ -6,19 +6,6 @@ all:
         127.0.0.1: # Due to the way this template is configured, DO NOT CHANGE THIS!
       vars:
         connection: local
-    automationcontroller:
-      hosts:
-        "fulfillment-controller-fulfillment-aap.apps-crc.testing":
-        #"fulfillment-controller-fulfillment-aap.apps-crc.testing": # FQDN of Automation Controller host(s)
-    automationedacontroller:
-      hosts:
-        "fulfillment-eda-fulfillment-aap.apps-crc.testing": # FQDN of Automation EDA Controller host(s)
-    automationhub:
-      hosts:
-        HERE: # FQDN of Automation Hub host(s). Can be commented out if not in use.
-    builder:
-      hosts:
-        HERE: # FQDN of builder host if you have one. Otherwise, can be Automation Hub host or commented out if not in use.
   vars:
     env: crc
 ...

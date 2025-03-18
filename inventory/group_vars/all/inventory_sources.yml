@@ -1,21 +1,21 @@
 ---
 controller_inventory_sources_all:
-  - name: fulfillment-configuration
+  - name: "{{ env }}-inventory-source"
     organization: configuration
     source: scm
     source_project: fulfillment-configuration
-    source_path: inventories/inventory_{{ env }}.yml
-    inventory: configuration
+    source_path: "inventory/inventory_{{ env }}.yml"
+    inventory: "{{ env }}-inventory"
     credential: ""
     overwrite: true
     overwrite_vars: true
     update_cache_timeout: 0
-  - name: fulfillment-eda
+  - name: hosts-inventory-source
     organization: fulfillment
     source: scm
     source_project: fulfillment-eda
-    source_path: inventories/hosts.yml
-    inventory: fulfillment-eda
+    source_path: "inventory/hosts.yml"
+    inventory: hosts-inventory
     credential: ""
     overwrite: true
     overwrite_vars: true
